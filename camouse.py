@@ -4,6 +4,7 @@ import cv2
 import numpy as np
 import pyautogui
 
+
 # Funcion para seleccionar la ROI
 
 def nothing(x):
@@ -45,6 +46,7 @@ lim_sup_v = 255
 cv2.createTrackbar("Limite superior: valor", vent0, lim_sup_v, 255, nothing)
 
 
+# The video source can change
 video = cv2.VideoCapture(1)
 
 while True:
@@ -92,7 +94,8 @@ Hist_roi = cv2.calcHist([HSV_roi], [0], mascara_rango_hsv, [180], [0, 180])
 term_crit = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 1)
 
 
-scrx, scry = pyautogui.size()
+camx = 640
+camy = 480
 
 fgbg = cv2.createBackgroundSubtractorMOG2()
 
