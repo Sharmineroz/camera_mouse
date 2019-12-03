@@ -1,0 +1,3 @@
+opencv==3.*
+pyautogui
+numpy

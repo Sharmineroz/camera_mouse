@@ -6,6 +6,8 @@ import pyautogui
 
 # Funcion para seleccionar la ROI
 
+def nothing(x):
+    pass
 
 def click_and_crop(event, x, y, flags, param):
     global puntos, Recortado
@@ -43,15 +45,13 @@ lim_sup_v = 255
 cv2.createTrackbar("Limite superior: valor", vent0, lim_sup_v, 255, nothing)
 
 
-video = cv2.VideoCapture(0)
+video = cv2.VideoCapture(1)
 
 while True:
 
-    para camara normal
+    #para camara normal
     _, cuadro_param = video.read()
     cuadro_param = cv2.flip(cuadro_param, 1)
-
-    cuadro_param = np.asanyarray(color_frame.get_data())
 
     # Se obtienen las posiciones actuales de las Trackbar
     lim_inf_h = cv2.getTrackbarPos("Limite inferior: matiz", vent0)
