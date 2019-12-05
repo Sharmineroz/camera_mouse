@@ -47,7 +47,7 @@ cv2.createTrackbar("Limite superior: valor", vent0, lim_sup_v, 255, nothing)
 
 
 # The video source can change
-video = cv2.VideoCapture(1)
+video = cv2.VideoCapture(0)
 
 while True:
 
@@ -180,27 +180,27 @@ while True:
                 area_opn = cv2.contourArea(max_c)
                 accion = 0
 
-    if accion == 0:
-        print("-o-")
-    if accion >= 1.30:
-        ini_track = (x, y, w, h)
+            if accion == 0:
+                print("-o-")
+            if accion >= 1.30:
+                ini_track = (x, y, w, h)
 
-        if (3 * camx / 8 < xc < 5 * camx / 8) and (3 * camy / 8 < yc < 5 * camy / 8):
-            print("--ok--")
-            pyautogui.click(interval=1)
-        print("-->")
-    if accion > 0.5 and accion < 1.30:
-        ini_track = (x, y, w, h)
+                if (3 * camx / 8 < xc < 5 * camx / 8) and (3 * camy / 8 < yc < 5 * camy / 8):
+                    print("--ok--")
+                    pyautogui.click(interval=1)
+                print("-->")
+            if accion > 0.5 and accion < 1.30:
+                ini_track = (x, y, w, h)
 
-        if (3 * camx / 8 < xc < 5 * camx / 8) and (3 * camy / 8 < yc < 5 * camy / 8):
-            pyautogui.click(button='right', clicks=1, interval=1)
-            print("--ok--")
-        print("<--")
-    cv2.imshow("mascara_rango_hsv", cuadro1)
-    # cv2.imshow("cuadro", roi_conteo)
+                if (3 * camx / 8 < xc < 5 * camx / 8) and (3 * camy / 8 < yc < 5 * camy / 8):
+                    pyautogui.click(button='right', clicks=1, interval=1)
+                    print("--ok--")
+                print("<--")
+            cv2.imshow("mascara_rango_hsv", cuadro1)
+            # cv2.imshow("cuadro", roi_conteo)
 
-    key = cv2.waitKey(1) & 0xFF
-    if key == ord("q"):
-        break
+            key = cv2.waitKey(1) & 0xFF
+            if key == ord("q"):
+                break
 video.release()
 cv2.destroyAllWindows()
