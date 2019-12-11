@@ -18,7 +18,7 @@ This is a simple application to control the PC´s cursor with hand gestures show
 
 	![](https://fthmb.tqn.com/8RXiZpXD8aWejfm2a74pOurmgyY=/400x0/id_anim_drawrect-56a246ba5f9b58b7d0c89194.gif)
 
-	Then by typng "q", it will pop an image showing wour selection, if correct, type "q" again, if not, type "z" to select again.
+	Then by typng "q", it will pop an image showing our selection, if correct, type "q" again, if not, type "z" to select again.
 
 	![](https://raw.githubusercontent.com/Sharmineroz/camera_mouse/master/screenshots/Screenshot%20%283%29.png)
 	
