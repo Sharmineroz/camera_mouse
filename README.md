@@ -1,4 +1,4 @@
-# Camera mouse
+
 This is a simple application to control the PC´s cursor with hand gestures shown to a camera using python. The instructions to make it work are listed below:
 
 1. Clone the repository and move where is located:
@@ -12,4 +12,4 @@ This is a simple application to control the PC´s cursor with hand gestures show
 	
 	It will pop two windows stacket one over the other (please slide them to show both on the screen).
 
-![Hand and HSV level selection windows](http://https://raw.githubusercontent.com/Sharmineroz/camera_mouse/master/screenshots/Screenshot%20(2).png "Hand and HSV level selection windows") 
+![](http://https://raw.githubusercontent.com/Sharmineroz/camera_mouse/master/screenshots/Screenshot%20(2).png)
