@@ -1,5 +1,7 @@
 # import the necessary packages
-import argparse
+import logging
+logging.basicConfig(level=logging.INFO)
+
 import cv2
 import numpy as np
 import pyautogui
@@ -68,6 +70,7 @@ while True:
 
     copia = cuadro_param.copy()
     cv2.namedWindow("Seleccion de ROI")
+    cv2.putText(cuadro_param, 'Select your hand, then press q', (0,20), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0, 225, 0), 2, cv2.LINE_AA)
     cv2.setMouseCallback("Seleccion de ROI", click_and_crop)
 
     cv2.imshow("Seleccion de ROI", cuadro_param)
@@ -77,8 +80,13 @@ while True:
     # Si se presiona z entonces se reinicia el ROI
     if key == ord("z"):
         cuadro_param = copia.copy()
+        logging.info('Clearing region of interest, please select your hand in the screen')
     # Si se presiona q se rompe el ciclo para dar paso a la parte que obtiene el ROI con base en los puntos del mouse
     elif key == ord("q"):
+        if not puntos:
+            logging.info('Void region of interest, please seect your hand in the screen')
+            continue
+
         break
 
 
