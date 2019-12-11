@@ -12,4 +12,4 @@ This is a simple application to control the PC´s cursor with hand gestures show
 	
 	It will pop two windows stacket one over the other (please slide them to show both on the screen).
 
-![](http://https://raw.githubusercontent.com/Sharmineroz/camera_mouse/master/screenshots/Screenshot%20(2).png)
+![](https://raw.githubusercontent.com/Sharmineroz/camera_mouse/master/screenshots/Screenshot%20%282%29.png)
