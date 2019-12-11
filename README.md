@@ -26,7 +26,7 @@ This is a simple application to control the PC´s cursor with hand gestures show
 
 ![](https://raw.githubusercontent.com/Sharmineroz/camera_mouse/master/screenshots/Screenshot%20%284%29.png).
 
-The cursor control works like a joystick, it moves the cursor only in the directions of the regions painted in green and one can only left or right click in the regions painted in orange. Do a fist to right click and swearing gesture (all fingers together) to left click.
+The cursor control works like a joystick, it moves the cursor only in the directions of the regions painted in green and one can only left or right click in the region painted in orange. Do a fist to right click and swearing gesture (all fingers together) to left click.
 
 ![](https://raw.githubusercontent.com/Sharmineroz/camera_mouse/master/screenshots/Screenshot%20%284%29%20-%20Copy.png)
 
